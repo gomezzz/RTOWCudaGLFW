@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{b064a1a3-009c-4ae3-92ca-deea3ff54ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rt">
+      <UniqueIdentifier>{cff2979c-9a75-444a-a0c0-46bb9ddbe730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="primitives">
+      <UniqueIdentifier>{754e1183-acea-440d-82fc-c49c746e0823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{44349534-151f-48ef-8b99-0ca48ca087ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfw_interop">
+      <UniqueIdentifier>{1aca3761-b775-4d6c-880f-a9da26d19ca0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vec3.h">
+      <Filter>utils</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ray.h">
+      <Filter>rt</Filter>
+    </ClInclude>
+    <ClInclude Include="hitable_list.h">
+      <Filter>rt</Filter>
+    </ClInclude>
+    <ClInclude Include="hitable.h">
+      <Filter>rt</Filter>
+    </ClInclude>
+    <ClInclude Include="sphere.h">
+      <Filter>primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="check_cuda.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="interop.h">
+      <Filter>glfw_interop</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\Libs\glad\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="interop.cpp">
+      <Filter>glfw_interop</Filter>
+    </ClCompile>
+    <ClCompile Include="material.h">
+      <Filter>rt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+  </ItemGroup>
+</Project>
